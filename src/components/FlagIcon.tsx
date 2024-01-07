@@ -45,6 +45,34 @@ export function FlagIcon(props: FlagIconProps) {
       </div>
     );
 
+  if (props.langCode === "gl-ES")
+    return (
+      <div className="w-8 h-6 rounded bg-[#2E3439] flex justify-center items-center">
+        <img src="/flags/galicia.svg" className="rounded" />
+      </div>
+    );
+  
+  if (props.langCode === "en-US") {
+  return (
+    <div className="w-8 h-6 rounded bg-[#2E3439] flex justify-center items-center">
+      <img src="/flags/usa.jpg" className="rounded" alt="USA Flag" />
+    </div>
+  );
+    
+} else if (props.langCode === "en-IN") {
+  return (
+    <div className="w-8 h-6 rounded bg-[#2E3439] flex justify-center items-center">
+      <img src="/flags/india.jpg" className="rounded" alt="India Flag" />
+    </div>
+  );
+    
+} else if (props.langCode === "en-PK") {
+  return (
+    <div className="w-8 h-6 rounded bg-[#2E3439] flex justify-center items-center">
+      <img src="/flags/pakistan.jpg" className="rounded" alt="Pakistan Flag" />
+    </div>
+  );
+
   let backgroundClass = "bg-video-context-flagBg";
   if (countryCode === "np") backgroundClass = "bg-white";
 
